@@ -1,1 +1,53 @@
 @charset "utf-8";
+
+a {
+  display: inline-block;
+}
+
+.wrapper {
+  background-color: #f2f6f7;
+  padding: 32px 0;
+}
+
+.formBox {
+  max-width: 640px;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 48px 64px;
+}
+
+.formBox__title {
+  font-size: 24px;
+  text-align: center;
+}
+
+.formBox__nav {
+  margin-top: 24px;
+}
+
+.formBox__nav__block {
+  display: flex;
+  justify-content: space-around;
+}
+
+.snsBlock {
+  width: 50%;
+  padding: 13px;
+  text-align: center;
+}
+
+.formBox__nav__block__facebook {
+  background-color: #3b5999;
+}
+
+.formBox__nav__block__facebook__text {
+  color: #fff;
+}
+
+.formBox__nav__block__google {
+  border: 1px solid #d9d9d9;
+}
+
+.formBox__nav__block__google__text {
+  color: #dd4b39;
+}
