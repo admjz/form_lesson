@@ -1,21 +1,32 @@
 @charset "utf-8";
 
+/* 共通 */
+body {
+  font-size: 12px;
+  color: #949697;
+}
+
 a {
   display: inline-block;
 }
 
+/* 外枠 */
 .wrapper {
   background-color: #f2f6f7;
   padding: 32px 0;
 }
 
-.formBox {
+.wrapper__formBlock {
   max-width: 640px;
-  background-color: #fff;
   margin: 0 auto;
+}
+
+/* 投稿エリア */
+.formBox {
   padding: 48px 64px;
   box-sizing: border-box;
   border-radius: 4px;
+  background-color: #fff;
 }
 
 .formBox__title {
@@ -24,6 +35,7 @@ a {
   text-align: center;
 }
 
+/* snsログインエリア */
 .formBox__nav {
   margin-top: 24px;
 }
@@ -65,6 +77,7 @@ a {
   text-align: center;
 }
 
+/* アカウント情報エリア */
 .formBox__formArea {
   margin-top: 20px;
 }
@@ -95,4 +108,53 @@ a {
 
 .formBox__formArea__content {
   margin-top: 20px;
+}
+
+.formLabel {
+  display: block;
+  color: #545658;
+}
+
+.formBox__formArea__content__nameArea {
+  display: flex;
+}
+
+.formBox__formArea__content__nameArea__nameArea__text {
+  width: 50%;
+}
+
+.formBox__formArea__content__nameArea__nameArea__text:last-child {
+  margin-left: 16px;
+}
+
+.essentialMark {
+  color: #ff0000;
+}
+
+.inputColumn {
+  width: 100%;
+  height: 36px;
+  margin-top: 5px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.formBlock {
+  margin-top: 20px;
+}
+
+.selectGender {
+  margin-top: 5px;
+  font-size: 16px;
+  color: #545658;
+}
+
+
+
+
+
+/* 最下部の文言 */
+.confirmationBox {
+  text-align: center;
 }

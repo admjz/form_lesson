@@ -10,82 +10,88 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
-    <section class="wrapper">
-      <div class="formBox">
-        <h1 class="formBox__title">アカウント作成</h1>
-        <nav class="formBox__nav">
-          <div class="formBox__nav__block">
-            <div class="snsBlock formBox__nav__block__facebook">
-              <a href="#" class="snsBlock__text formBox__nav__block__facebook__text">Facebookでスタート</a>
+    <div class="wrapper">
+      <div class="wrapper__formBlock">
+        <div class="formBox">
+          <h1 class="formBox__title">アカウント作成</h1>
+          <nav class="formBox__nav">
+            <div class="formBox__nav__block">
+              <div class="snsBlock formBox__nav__block__facebook">
+                <a href="#" class="snsBlock__text formBox__nav__block__facebook__text">Facebookでスタート</a>
+              </div>
+              <div class="snsBlock formBox__nav__block__google">
+                <a href="#" class="snsBlock__text formBox__nav__block__google__text">Googleでスタート</a>
+              </div>
             </div>
-            <div class="snsBlock formBox__nav__block__google">
-              <a href="#" class="snsBlock__text formBox__nav__block__google__text">Googleでスタート</a>
-            </div>
+            <p class="formBox__nav__text">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+          </nav>
+          <div class="formBox__formArea">
+            <p class="formBox__formArea__text">アカウント情報</p>
+            <form action="#" method="POST" class="formBox__formArea__content">
+              <div class="formBox__formArea__content__nameArea">
+                <div class="formBox__formArea__content__nameArea__nameArea__text">
+                  <label for="lastName" class="formLabel">名字<span class="essentialMark"> ※</span></label>
+                  <input type="text" class="inputColumn">
+                </div>
+                <div class="formBox__formArea__content__nameArea__nameArea__text">
+                  <label for="firstName" class="formLabel">名前<span class="essentialMark"> ※</span></label>
+                  <input type="text" class="inputColumn inputName">
+                </div>
+              </div>
+              <div class="formBlock formBox__formArea__content__genderArea">
+                <label for="gender" class="formLabel">性別</label>
+                <div class="selectGender">
+                  <input type="radio" name="gender">男性
+                  <input type="radio" name="gender">女性
+                  <input type="radio" name="gender">その他
+                </div>
+              </div>
+              <div class="formBlock">
+                <label for="prefecture" class="formLabel">出身</label>
+                <select name="" id="">
+                  <option value="tokyo">東京</option>
+                  <option value="tokyo">千葉</option>
+                  <option value="tokyo">埼玉</option>
+                  <option value="tokyo">神奈川</option>
+                </select>
+              </div>
+              <div class="formBlock">
+                <label for="email" class="formLabel">Eメール<span class="essentialMark"> ※</span></label>
+                <input type="email" placeholder="ex)hoge@example.com" class="inputColumn">
+              </div>
+              <div class="formBlock">
+                <label for="phone" class="formLabel">電話番号</label>
+                <input type="text" placeholder="ex)09012345678" class="inputColumn">
+              </div>
+              <div class="formBlock">
+                <label for="password" class="formLabel">パスワード<span class="essentialMark"> ※</span></label>
+                <input type="password" class="inputColumn">
+              </div>
+              <div class="formBlock">
+                <label for="confirmationPassword" class="formLabel">パスワード(確認用)<span class="essentialMark"> ※</span></label>
+                <input type="password" class="inputColumn">
+              </div>
+              <div class="formBlock">
+                <label for="preferredCourse" class="formLabel">希望コース</label>
+                <label><input type="checkbox">フロントエンド</label>
+                <label><input type="checkbox">バックエンド</label>
+                <label><input type="checkbox">アプリ</label>
+              </div>
+              <div class="formBlock">
+                <label for="notes" class="formLabel">備考</label>
+                <input type="textarea" placeholder="何かあればご記入ください" class="inputColumn">
+              </div>
+              <button type="submit" class="formBlock inputColumn">アカウント作成</button>
+            </form>
           </div>
-          <p class="formBox__nav__text">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
-        </nav>
-        <div class="formBox__formArea">
-          <p class="formBox__formArea__text">アカウント情報</p>
-          <form action="#" method="POST" class="formBox__formArea__content">
-            <div>
-              <label for="lastName">名字</label>
-              <input type="text">
-            </div>
-            <div>
-              <label for="firstName">名前</label>
-              <input type="text">
-            </div>
-            <div>
-              <label for="sex">性別</label>
-              <label><input type="radio">男性</label>
-              <label><input type="radio">女性</label>
-              <label><input type="radio">その他</label>
-            </div>
-            <div>
-              <label for="prefecture">出身</label>
-              <select name="" id="">
-                <option value="tokyo">東京</option>
-                <option value="tokyo">千葉</option>
-                <option value="tokyo">埼玉</option>
-                <option value="tokyo">神奈川</option>
-              </select>
-            </div>
-            <div>
-              <label for="email">Eメール</label>
-              <input type="email" placeholder="ex)hoge@example.com">
-            </div>
-            <div>
-              <label for="phone">電話番号</label>
-              <input type="text" placeholder="ex)09012345678">
-            </div>
-            <div>
-              <label for="password">パスワード</label>
-              <input type="password">
-            </div>
-            <div>
-              <label for="confirmationPassword">パスワード(確認用)</label>
-              <input type="password">
-            </div>
-            <div>
-              <label for="preferredCourse">希望コース</label>
-              <label><input type="checkbox">フロントエンド</label>
-              <label><input type="checkbox">バックエンド</label>
-              <label><input type="checkbox">アプリ</label>
-            </div>
-            <div>
-              <label for="notes">備考</label>
-              <input type="textarea" placeholder="何かあればご記入ください">
-            </div>
-            <button type="submit">アカウント作成</button>
-          </form>
+          <div class="formBlock">
+            <p>アカウントを作成することにより、<a href="#">利用規約</a>と<a href="#">プライバシーポリシー</a>に同意するものとします。</p>
+          </div>
         </div>
-        <div>
-          <p>アカウントを作成することにより、<a href="#">利用規約</a>と<a href="#">プライバシーポリシー</a>に同意するものとします。</p>
+        <div class="confirmationBox">
+          <p>すでにアカウントをお持ちですか？<a href="#">ログイン</a></p>
+          <a href="#">認証メールが届きませんか？</a>
         </div>
-      </div>
-      <div class="">
-        <p>すでにアカウントをお持ちですか？<a href="#">ログイン</a></p>
-        <a href="#">認証メールが届きませんか？</a>
       </div>
     </section>
   </body>
