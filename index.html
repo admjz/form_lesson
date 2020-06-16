@@ -16,10 +16,10 @@
           <h1 class="formBox__title">アカウント作成</h1>
           <nav class="formBox__nav">
             <div class="formBox__nav__block">
-              <div class="snsBlock formBox__nav__block__facebook">
+              <div class="snsBlock">
                 <a href="#" class="snsBlock__text formBox__nav__block__facebook__text">Facebookでスタート</a>
               </div>
-              <div class="snsBlock formBox__nav__block__google">
+              <div class="snsBlock">
                 <a href="#" class="snsBlock__text formBox__nav__block__google__text">Googleでスタート</a>
               </div>
             </div>
@@ -31,57 +31,57 @@
               <div class="formBox__formArea__content__nameArea">
                 <div class="formBox__formArea__content__nameArea__nameArea__text">
                   <label for="lastName" class="formLabel">名字<span class="essentialMark"> ※</span></label>
-                  <input type="text" class="inputColumn">
+                  <input type="text" name="lastName" class="inputColumn">
                 </div>
                 <div class="formBox__formArea__content__nameArea__nameArea__text">
                   <label for="firstName" class="formLabel">名前<span class="essentialMark"> ※</span></label>
-                  <input type="text" class="inputColumn inputName">
+                  <input type="text" name="firstName" class="inputColumn inputName">
                 </div>
               </div>
               <div class="formBlock formBox__formArea__content__genderArea">
                 <label for="gender" class="formLabel">性別</label>
                 <div class="selectGender">
-                  <label><input type="radio" name="gender" class="button">男性</label>
-                  <label class="selectGender__area"><input type="radio" name="gender" class="button">女性</label>
-                  <label class="selectGender__area"><input type="radio" name="gender" class="button">その他</label>
+                  <label class="selectGender__area"><input type="radio" name="gender" class="button"><span class="markBox">男性</span></label>
+                  <label class="selectGender__area"><input type="radio" name="gender" class="button"><span class="markBox">女性</span></label>
+                  <label class="selectGender__area"><input type="radio" name="gender" class="button"><span class="markBox">その他</span></label>
                 </div>
               </div>
               <div class="formBlock">
                 <label for="prefecture" class="formLabel">出身</label>
-                <select name="" id="" class="formLabel inputColumn prefecture">
-                  <option value="tokyo">東京</option>
-                  <option value="chiba">千葉</option>
-                  <option value="saitama">埼玉</option>
-                  <option value="kanagawa">神奈川</option>
-                </select>
-              </div>
-              <div class="formBlock">
-                <label for="email" class="formLabel">Eメール<span class="essentialMark"> ※</span></label>
-                <input type="email" placeholder=" ex) hoge@example.com" class="inputColumn">
-              </div>
-              <div class="formBlock">
-                <label for="phone" class="formLabel">電話番号</label>
-                <input type="text" placeholder=" ex) 09012345678" class="inputColumn">
-              </div>
-              <div class="formBlock">
-                <label for="password" class="formLabel">パスワード<span class="essentialMark"> ※</span></label>
-                <input type="password" class="inputColumn">
-              </div>
-              <div class="formBlock">
-                <label for="confirmationPassword" class="formLabel">パスワード(確認用)<span class="essentialMark"> ※</span></label>
-                <input type="password" class="inputColumn">
-              </div>
-              <div class="formBlock">
-                <label for="preferredCourse" class="formLabel">希望コース</label>
-                <div class="checkCourse">
-                  <label class="courseName"><input type="checkbox" class="button checkCourse__button">フロントエンド</label>
-                  <label class="courseName"><input type="checkbox" class="button checkCourse__button">バックエンド</label>
-                  <label class="courseName"><input type="checkbox" class="button checkCourse__button">アプリ</label>
+                <div class="prefectureBlock">
+                  <select name="prefecture" class="formLabel inputColumn prefectureName">
+                    <option value="tokyo">東京</option>
+                    <option value="chiba">千葉</option>
+                    <option value="saitama">埼玉</option>
+                    <option value="kanagawa">神奈川</option>
+                  </select>
                 </div>
               </div>
               <div class="formBlock">
+                <label for="email" class="formLabel">Eメール<span class="essentialMark"> ※</span></label>
+                <input type="email" name="email" placeholder="ex) hoge@example.com" class="inputColumn">
+              </div>
+              <div class="formBlock">
+                <label for="phone" class="formLabel">電話番号</label>
+                <input type="text" name="phone" placeholder="ex) 09012345678" class="inputColumn">
+              </div>
+              <div class="formBlock">
+                <label for="password" class="formLabel">パスワード<span class="essentialMark"> ※</span></label>
+                <input type="password" name="password" class="inputColumn">
+              </div>
+              <div class="formBlock">
+                <label for="confirmationPassword" class="formLabel">パスワード(確認用)<span class="essentialMark"> ※</span></label>
+                <input type="password" name="confirmationPassword" class="inputColumn">
+              </div>
+              <div class="formBlock">
+                <label for="preferredCourse" class="formLabel">希望コース</label>
+                <label class="courseName"><input type="checkbox" name="preferredCourse" class="button"><span class="markBox checkBox">フロントエンド</span></label>
+                <label class="courseName"><input type="checkbox" name="preferredCourse" class="button"><span class="markBox checkBox">バックエンド</span></label>
+                <label class="courseName"><input type="checkbox" name="preferredCourse" class="button"><span class="markBox checkBox">アプリ</span></label>
+              </div>
+              <div class="formBlock">
                 <label for="notes" class="formLabel">備考</label>
-                <input type="textarea" placeholder="何かあればご記入ください" class="inputColumn notes">
+                <textarea type="textarea" name="notes" placeholder="何かあればご記入ください" class="inputColumn notes"></textarea>
               </div>
               <button type="submit" class="inputColumn formBlock createAccount">アカウント作成</button>
             </form>
