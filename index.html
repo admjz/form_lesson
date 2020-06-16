@@ -41,27 +41,27 @@
               <div class="formBlock formBox__formArea__content__genderArea">
                 <label for="gender" class="formLabel">性別</label>
                 <div class="selectGender">
-                  <input type="radio" name="gender">男性
-                  <input type="radio" name="gender">女性
-                  <input type="radio" name="gender">その他
+                  <label><input type="radio" name="gender" class="button">男性</label>
+                  <label class="selectGender__area"><input type="radio" name="gender" class="button">女性</label>
+                  <label class="selectGender__area"><input type="radio" name="gender" class="button">その他</label>
                 </div>
               </div>
               <div class="formBlock">
                 <label for="prefecture" class="formLabel">出身</label>
-                <select name="" id="">
+                <select name="" id="" class="formLabel inputColumn prefecture">
                   <option value="tokyo">東京</option>
-                  <option value="tokyo">千葉</option>
-                  <option value="tokyo">埼玉</option>
-                  <option value="tokyo">神奈川</option>
+                  <option value="chiba">千葉</option>
+                  <option value="saitama">埼玉</option>
+                  <option value="kanagawa">神奈川</option>
                 </select>
               </div>
               <div class="formBlock">
                 <label for="email" class="formLabel">Eメール<span class="essentialMark"> ※</span></label>
-                <input type="email" placeholder="ex)hoge@example.com" class="inputColumn">
+                <input type="email" placeholder=" ex) hoge@example.com" class="inputColumn">
               </div>
               <div class="formBlock">
                 <label for="phone" class="formLabel">電話番号</label>
-                <input type="text" placeholder="ex)09012345678" class="inputColumn">
+                <input type="text" placeholder=" ex) 09012345678" class="inputColumn">
               </div>
               <div class="formBlock">
                 <label for="password" class="formLabel">パスワード<span class="essentialMark"> ※</span></label>
@@ -73,18 +73,20 @@
               </div>
               <div class="formBlock">
                 <label for="preferredCourse" class="formLabel">希望コース</label>
-                <label><input type="checkbox">フロントエンド</label>
-                <label><input type="checkbox">バックエンド</label>
-                <label><input type="checkbox">アプリ</label>
+                <div class="checkCourse">
+                  <label class="courseName"><input type="checkbox" class="button checkCourse__button">フロントエンド</label>
+                  <label class="courseName"><input type="checkbox" class="button checkCourse__button">バックエンド</label>
+                  <label class="courseName"><input type="checkbox" class="button checkCourse__button">アプリ</label>
+                </div>
               </div>
               <div class="formBlock">
                 <label for="notes" class="formLabel">備考</label>
-                <input type="textarea" placeholder="何かあればご記入ください" class="inputColumn">
+                <input type="textarea" placeholder="何かあればご記入ください" class="inputColumn notes">
               </div>
-              <button type="submit" class="formBlock inputColumn">アカウント作成</button>
+              <button type="submit" class="inputColumn formBlock createAccount">アカウント作成</button>
             </form>
           </div>
-          <div class="formBlock">
+          <div class="formBlock formBox__agreement">
             <p>アカウントを作成することにより、<a href="#">利用規約</a>と<a href="#">プライバシーポリシー</a>に同意するものとします。</p>
           </div>
         </div>

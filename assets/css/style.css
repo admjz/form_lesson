@@ -8,6 +8,34 @@ body {
 
 a {
   display: inline-block;
+  color: #01bfbd;
+}
+
+.formBlock {
+  margin-top: 20px;
+}
+
+.inputColumn {
+  width: 100%;
+  height: 36px;
+  margin-top: 5px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #fbfbfb;
+  font-size: 13px;
+}
+
+.formLabel {
+  width: 50%;
+  display: block;
+  color: #545658;
+}
+
+.button {
+  vertical-align: baseline;
+  transform: scale(1.3);
+  margin-right: 5px;
 }
 
 /* 外枠 */
@@ -17,7 +45,7 @@ a {
 }
 
 .wrapper__formBlock {
-  max-width: 640px;
+  width: 640px;
   margin: 0 auto;
 }
 
@@ -110,11 +138,7 @@ a {
   margin-top: 20px;
 }
 
-.formLabel {
-  display: block;
-  color: #545658;
-}
-
+/* 氏名入力 */
 .formBox__formArea__content__nameArea {
   display: flex;
 }
@@ -131,30 +155,72 @@ a {
   color: #ff0000;
 }
 
-.inputColumn {
-  width: 100%;
-  height: 36px;
-  margin-top: 5px;
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
-  box-sizing: border-box;
-}
-
-.formBlock {
-  margin-top: 20px;
-}
-
+/* 性別入力 */
 .selectGender {
   margin-top: 5px;
   font-size: 16px;
   color: #545658;
 }
 
+.selectGender__area {
+  margin-left: 15px;
+}
 
+/* 出身入力 */
+.prefecture {
+  width: 50%;
+}
 
+/* Eメール入力 */
+/* 電話番号入力 */
+/* パスワード入力 */
 
+/* 希望コース入力 */
+.checkCourse {
+ margin-top: 5px;
+}
 
-/* 最下部の文言 */
+.checkCourse__button {
+  margin-right: 10px;
+}
+
+.courseName {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #545658;
+}
+
+.courseName:first-child {
+  margin-top: 0;
+}
+
+/* 備考入力 */
+.notes {
+  height: 100px;
+}
+
+.notes::placeholder {
+}
+
+/* アカウント作成ボタン */
+.createAccount {
+  height: auto;
+  margin-top: 20px;
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+}
+
+/* 合意文言 */
+.formBox__agreement {
+  color: #000;
+}
+
+/* 最下部の確認文言 */
 .confirmationBox {
+  margin-top: 32px;
+  line-height: 2;
   text-align: center;
+  color: #000;
 }
