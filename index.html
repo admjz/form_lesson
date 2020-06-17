@@ -26,7 +26,9 @@
             <p class="formBox__nav__text">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
           </nav>
           <div class="formBox__formArea">
-            <p class="formBox__formArea__text">アカウント情報</p>
+            <div class="formBox__formArea__title">
+              <p class="formBox__formArea__text">アカウント情報</p>
+            </div>
             <form action="#" method="POST" class="formBox__formArea__content">
               <div class="formBox__formArea__content__nameArea">
                 <div class="formBox__formArea__content__nameArea__nameArea__text">
@@ -39,23 +41,23 @@
                 </div>
               </div>
               <div class="formBlock formBox__formArea__content__genderArea">
-                <label for="gender" class="formLabel">性別</label>
+                <label class="formLabel">性別</label>
                 <div class="selectGender">
                   <label class="selectGender__area">
-                    <input type="radio" name="gender" id="gender" value="male" class="button">
+                    <input type="radio" name="gender" value="male" class="button">
                     <span class="markBox">男性</span>
                   </label>
                   <label class="selectGender__area">
-                    <input type="radio" name="gender" id="gender" value="female" class="button">
+                    <input type="radio" name="gender" value="female" class="button">
                     <span class="markBox">女性</span>
                   </label>
                   <label class="selectGender__area">
-                    <input type="radio" name="gender" id="gender" value="others" class="button">
+                    <input type="radio" name="gender" value="others" class="button">
                     <span class="markBox">その他</span>
                   </label>
                 </div>
               </div>
-              <div class="formBlock">
+              <div class="formBlock formBlock__content">
                 <label for="prefecture" class="formLabel">出身</label>
                 <div class="prefectureBlock">
                   <select name="prefecture" class="formLabel inputColumn prefectureName">
@@ -83,21 +85,21 @@
                 <input type="password" name="confirmationPassword" id="confirmationPassword" class="inputColumn" required>
               </div>
               <div class="formBlock">
-                <label for="preferredCourse" class="formLabel">希望コース</label>
-                <label class="courseName">
-                  <input type="checkbox" name="preferredCourse" id="preferredCourse" value="frontEnd" class="button">
+                <label class="formLabel">希望コース</label>
+                <div class="courseName">
+                  <input type="checkbox" name="preferredCourse" value="frontEnd" class="button">
                   <span class="markBox checkBox">フロントエンド</span>
-                </label>
-                <label class="courseName">
-                  <input type="checkbox" name="preferredCourse" id="preferredCourse" value="backEnd" class="button">
+                </div>
+                <div class="courseName">
+                  <input type="checkbox" name="preferredCourse" value="backEnd" class="button">
                   <span class="markBox checkBox">バックエンド</span>
-                </label>
-                <label class="courseName">
-                  <input type="checkbox" name="preferredCourse" id="preferredCourse" value="application" class="button">
+                </div>
+                <div class="courseName">
+                  <input type="checkbox" name="preferredCourse" value="application" class="button">
                   <span class="markBox checkBox">アプリ</span>
-                </label>
+                </div>
               </div>
-              <div class="formBlock">
+              <div class="formBlock formBlock__notes">
                 <label for="notes" class="formLabel">備考</label>
                 <textarea name="notes" id="notes" placeholder="何かあればご記入ください" class="inputColumn notes"></textarea>
               </div>
@@ -105,12 +107,12 @@
             </form>
           </div>
           <div class="formBlock formBox__agreement">
-            <p>アカウントを作成することにより、<a href="#">利用規約</a>と<a href="#">プライバシーポリシー</a>に同意するものとします。</p>
+            <p class="agreement__text">アカウントを作成することにより、<a href="#" class="link">利用規約</a>と<a href="#" class="link">プライバシーポリシー</a>に同意するものとします。</p>
           </div>
         </div>
         <div class="confirmationBox">
-          <p>すでにアカウントをお持ちですか？<a href="#" class="confirmationBox__text">ログイン</a></p>
-          <a href="#" class="confirmationBox__text">認証メールが届きませんか？</a>
+          <p class="confirmationBox__text">すでにアカウントをお持ちですか？ <a href="#" class="link confirmationBox__link">ログイン</a></p>
+          <a href="#" class="link confirmationBox__text">認証メールが届きませんか？</a>
         </div>
       </div>
     </div>
