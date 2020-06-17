@@ -103,10 +103,18 @@ a {
   color: #fff;
 }
 
+.formBox__nav__block__facebook__text:hover {
+  background-color: #344e87;
+}
+
 .formBox__nav__block__google__text {
   background-color: #fff;
   border-color: #d9d9d9;
   color: #dd4b39;
+}
+
+.formBox__nav__block__google__text:hover {
+  background-color: #f7f7f7;
 }
 
 .formBox__nav__text {
@@ -300,6 +308,16 @@ display: none;
   cursor: pointer;
 }
 
+.createAccount:hover {
+  background-color: #01a6a4;
+}
+
+.createAccount:focus {
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+}
+
 .createAccount:active {
   background-color: #fff;
   color: #01a6a4;
@@ -317,4 +335,8 @@ display: none;
   line-height: 2;
   text-align: center;
   color: #000;
+}
+
+.confirmationBox__text:hover {
+  text-decoration: underline;
 }
