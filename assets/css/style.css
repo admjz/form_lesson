@@ -163,11 +163,11 @@ a {
   display: flex;
 }
 
-.formBox__formArea__content__nameArea__nameArea__text {
+.formBox__formArea__content__nameArea__text {
   width: 50%;
 }
 
-.formBox__formArea__content__nameArea__nameArea__text:last-child {
+.formBox__formArea__content__nameArea__text:last-child {
   margin-left: 16px;
 }
 
@@ -257,6 +257,7 @@ display: none;
 
 /* 希望コース入力 */
 .courseName {
+  display: block;
   margin-top: 10px;
   font-size: 16px;
   color: #545658;
